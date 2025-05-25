@@ -1,33 +1,52 @@
 <template>
-  <div class="space-y-12">
+  <div class="space-y-8">
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-blue-50 rounded-lg shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="relative overflow-hidden bg-white text-gray-900">
+      <!-- 装飾的な背景パターン -->
+      <div class="absolute inset-0">
+        <!-- グラデーション部分 -->
+        <div class="absolute top-0 right-0 h-full w-[45%]" style="
+          clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+          background: linear-gradient(45deg, 
+            #1E3A8A 0%,
+            #0F766E 30%,
+            #0D9488 60%,
+            #2DD4BF 100%
+          );
+        "></div>
+      </div>
+      
+      <!-- コンテンツ -->
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="flex flex-col md:flex-row items-center justify-between gap-12">
           <!-- 左側：テキストコンテンツ -->
           <div class="md:w-2/3 text-left">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ t('home.title') }}</h1>
+            <h1 class="text-4xl font-bold text-teal-500 mb-4">{{ t('home.title') }}</h1>
             <p class="text-xl text-gray-600 mb-8">{{ t('home.subtitle') }}</p>
             <div class="flex flex-wrap gap-4">
               <NuxtLink
                 to="/contact"
-                class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                class="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition-colors"
               >
                 {{ t('home.contactButton') }}
               </NuxtLink>
-              <!-- <NuxtLink
-                to="/projects"
-                class="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+              <a
+                href="/documents/lebenslauf.pdf"
+                download
+                class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors flex items-center"
               >
-                {{ t('home.viewProjectsButton') }}
-              </NuxtLink> -->
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                {{ t('home.downloadCV') }}
+              </a>
             </div>
           </div>
 
           <!-- 右側：プロフィール写真とポップアップ -->
           <div class="md:w-1/3 relative group">
             <div class="relative">
-              <div class="w-64 h-64 mx-auto overflow-hidden rounded-full ring-4 ring-white hover:ring-blue-600 transition-all shadow-lg">
+              <div class="w-64 h-64 mx-auto overflow-hidden rounded-full ring-4 ring-white hover:ring-teal-800 transition-all shadow-lg">
                 <img
                   src="/images/profile.jpg"
                   :alt="t('home.profile.name')"
@@ -49,7 +68,7 @@
                 <p class="font-semibold text-lg text-gray-900">{{ t('home.profile.name') }}</p>
                 <p class="text-gray-600">{{ t('home.profile.title') }}</p>
                 <div class="flex justify-center space-x-4 mt-3">
-                  <a 
+                  <a
                     href="https://github.com/Tobeadragon" 
                     target="_blank" 
                     rel="noopener noreferrer" 
@@ -61,7 +80,7 @@
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com/in/yourusername" 
+                    href="https://www.linkedin.com/in/tatsuya-yamashita-69895868/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     class="text-gray-600 hover:text-blue-600"
@@ -86,59 +105,10 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="bg-white rounded-lg shadow-sm p-8">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ t('home.skills') }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-        <div class="p-4 border rounded-lg">
-          <h3 class="text-xl font-semibold mb-3">{{ t('home.frontend') }}</h3>
-          <ul class="space-y-2">
-            <li>Vue.js / Nuxt.js</li>
-            <li>React / Next.js</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-          </ul>
-        </div>
-        <div class="p-4 border rounded-lg">
-          <h3 class="text-xl font-semibold mb-3">{{ t('home.backend') }}</h3>
-          <ul class="space-y-2">
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-          </ul>
-        </div>
-        <div class="p-4 border rounded-lg">
-          <h3 class="text-xl font-semibold mb-3">{{ t('home.qa') }}</h3>
-          <ul class="space-y-2">
-            <li>Jest</li>
-            <li>Cypress</li>
-            <li>TestCafe</li>
-            <li>Unit / E2E Testing</li>
-          </ul>
-        </div>
-        <div class="p-4 border rounded-lg">
-          <h3 class="text-xl font-semibold mb-3">{{ t('home.pcSupport') }}</h3>
-          <ul class="space-y-2">
-            <li>MS Office 365</li>
-            <li>Word / Excel</li>
-            <li>PowerPoint</li>
-            <li>Windows / macOS</li>
-          </ul>
-        </div>
-        <div class="p-4 border rounded-lg">
-          <h3 class="text-xl font-semibold mb-3">{{ t('home.other') }}</h3>
-          <ul class="space-y-2">
-            <li>Git</li>
-            <li>Docker</li>
-            <li>AWS</li>
-            <li>CI/CD</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+    <SkillsSection />
+    
     <!-- Featured Projects -->
-    <!-- 一時的に非表示
+    <!-- 
     <section class="bg-white rounded-lg shadow-sm p-8">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ t('home.featuredProjects') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
