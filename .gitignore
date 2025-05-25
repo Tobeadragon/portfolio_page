@@ -12,27 +12,13 @@ node_modules
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
-# Environment variables
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
 .env
 .env.*
 !.env.example
-
-# macOS-specific files
-.DS_Store
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Misc
-.fleet
