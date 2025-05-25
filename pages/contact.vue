@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-2xl mx-auto">
-    <h1 class="text-3xl font-bold text-gray-900 mb-8">{{ t('contact.title') }}</h1>
+    <h1 class="text-3xl font-bold text-gray-900 mb-8 pl-4">{{ t('contact.title') }}</h1>
     
     <div class="bg-white rounded-lg shadow-sm p-8">
       <form @submit.prevent="handleSubmit" class="space-y-6">

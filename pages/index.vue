@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-12">
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-white rounded-lg shadow-sm">
+    <section class="text-center py-20 bg-blue-50 rounded-lg shadow-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row items-center justify-between gap-12">
           <!-- 左側：テキストコンテンツ -->
@@ -15,12 +15,12 @@
               >
                 {{ t('home.contactButton') }}
               </NuxtLink>
-              <NuxtLink
+              <!-- <NuxtLink
                 to="/projects"
                 class="bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 {{ t('home.viewProjectsButton') }}
-              </NuxtLink>
+              </NuxtLink> -->
             </div>
           </div>
 
@@ -45,7 +45,7 @@
                 </div>
               </div>
               <!-- ホバー時のポップアップ -->
-              <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 w-5/6 py-4 px-6 bg-white rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all">
+              <div class="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:bottom-0 md:translate-y-1/2 w-full md:w-5/6 py-4 px-6 bg-white rounded-lg shadow-xl mt-10 md:mt-0 md:opacity-0 md:group-hover:opacity-100 md:transition-all">
                 <p class="font-semibold text-lg text-gray-900">{{ t('home.profile.name') }}</p>
                 <p class="text-gray-600">{{ t('home.profile.title') }}</p>
                 <div class="flex justify-center space-x-4 mt-3">
@@ -71,7 +71,7 @@
                       <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                     </svg>
                   </a>
-                  <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-blue-600">
+                  <a href="mailto:mastertyj@hotmail.com" class="text-gray-600 hover:text-blue-600">
                     <span class="sr-only">{{ t('home.profile.socialLinks.email') }}</span>
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>

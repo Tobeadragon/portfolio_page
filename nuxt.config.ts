@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
+  routeRules: {
+    '/.well-known/**': { redirect: '/' }
+  },
   app: {
     head: {
       title: 'Tatsuya Yamashita',

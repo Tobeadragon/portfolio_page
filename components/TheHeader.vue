@@ -1,19 +1,56 @@
 <template>
-  <header class="bg-white shadow-sm">
+  <header class="bg-gray-800 shadow-sm fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <!-- 左側：ナビゲーションメニュー -->
-        <nav class="flex space-x-8">
-          <NuxtLink
-            v-for="(link, index) in links"
-            :key="index"
-            :to="link.to"
-            class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-            :class="{ 'text-blue-600': route.path === link.to }"
+        <!-- ハンバーガーメニューボタン（モバイルのみ） -->
+        <button 
+          @click="isMenuOpen = !isMenuOpen"
+          class="md:hidden p-2 text-white"
+        >
+          <svg 
+            class="w-6 h-6" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
           >
-            {{ t(link.text) }}
-          </NuxtLink>
-        </nav>
+            <path 
+              v-if="!isMenuOpen"
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+            <path 
+              v-else
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <!-- ナビゲーションメニュー -->
+        <div 
+          :class="{
+            'hidden md:block': !isMenuOpen,
+            'absolute top-16 left-0 right-0 bg-gray-800 shadow-lg md:shadow-none md:relative md:top-0 md:block': isMenuOpen
+          }"
+          class="w-full md:w-auto"
+        >
+          <nav class="md:flex md:space-x-8 px-6 md:px-0 py-2 md:py-0">
+            <NuxtLink
+              v-for="(link, index) in links"
+              :key="index"
+              :to="link.to"
+              class="block md:inline-block text-gray-300 hover:text-white py-2 text-sm font-medium pl-4 md:pl-0"
+              :class="{ 'text-white': route.path === link.to }"
+              @click="isMenuOpen = false"
+            >
+              {{ t(link.text) }}
+            </NuxtLink>
+          </nav>
+        </div>
 
         <!-- 右側：言語切り替え -->
         <div class="flex space-x-2">
@@ -24,7 +61,7 @@
             class="px-2 py-1 rounded text-sm"
             :class="{
               'bg-blue-600 text-white': language === lang,
-              'text-gray-600 hover:bg-gray-100': language !== lang
+              'text-gray-300 hover:text-white hover:bg-gray-700': language !== lang
             }"
           >
             {{ lang.toUpperCase() }}
@@ -38,6 +75,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const { t, language, setLanguage } = useLanguage()
+const isMenuOpen = ref(false)
 
 const links = [
   { to: '/', text: 'nav.home' },
