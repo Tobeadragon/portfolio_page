@@ -4,11 +4,11 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   app: {
     head: {
-      title: 'Web Developer Portfolio',
+      title: 'Tatsuya Yamashita',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Web Developer Portfolio' }
+        { name: 'description', content: 'Tatsuya Yamashita - Full-stack Developer' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

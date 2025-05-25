@@ -41,7 +41,6 @@ const { t, language, setLanguage } = useLanguage()
 
 const links = [
   { to: '/', text: 'nav.home' },
-  { to: '/projects', text: 'nav.projects' },
   { to: '/about', text: 'nav.about' },
   { to: '/contact', text: 'nav.contact' }
 ]

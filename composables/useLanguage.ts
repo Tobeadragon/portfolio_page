@@ -13,7 +13,7 @@ export const useLanguage = () => {
         contact: 'Kontakt'
       },
       home: {
-        title: 'Web-Entwickler Portfolio',
+        title: 'Tatsuya Yamashita',
         subtitle: 'Als Full-Stack-Entwickler biete ich innovative Lösungen',
         contactButton: 'Kontaktieren Sie mich',
         viewProjectsButton: 'Projekte ansehen',
@@ -100,7 +100,7 @@ export const useLanguage = () => {
         contact: 'Contact'
       },
       home: {
-        title: 'Web Developer Portfolio',
+        title: 'Tatsuya Yamashita',
         subtitle: 'Providing innovative solutions as a full-stack developer',
         contactButton: 'Contact Me',
         viewProjectsButton: 'View Projects',
@@ -187,7 +187,7 @@ export const useLanguage = () => {
         contact: 'お問い合わせ'
       },
       home: {
-        title: 'Web開発者ポートフォリオ',
+        title: 'Tatsuya Yamashita',
         subtitle: 'フルスタック開発者として革新的なソリューションを提供',
         contactButton: 'お問い合わせ',
         viewProjectsButton: 'プロジェクトを見る',

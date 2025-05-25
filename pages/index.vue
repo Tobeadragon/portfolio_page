@@ -27,13 +27,22 @@
           <!-- 右側：プロフィール写真とポップアップ -->
           <div class="md:w-1/3 relative group">
             <div class="relative">
-              <div class="w-64 h-64 mx-auto overflow-hidden rounded-full ring-4 ring-white hover:ring-blue-600 transition-all shadow-lg bg-gray-100">
+              <div class="w-64 h-64 mx-auto overflow-hidden rounded-full ring-4 ring-white hover:ring-blue-600 transition-all shadow-lg">
                 <img
-                  :src="'/images/profile.jpg'"
+                  src="/images/profile.jpg"
                   :alt="t('home.profile.name')"
                   class="w-full h-full object-cover"
                   @error="$event.target.style.display = 'none'"
                 />
+                <div v-if="false" class="w-full h-full bg-gray-200 flex items-center justify-center">
+                  <svg
+                    class="w-24 h-24 text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                  </svg>
+                </div>
               </div>
               <!-- ホバー時のポップアップ -->
               <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 w-5/6 py-4 px-6 bg-white rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all">
