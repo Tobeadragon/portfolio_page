@@ -27,11 +27,14 @@
           <!-- 右側：プロフィール写真とポップアップ -->
           <div class="md:w-1/3 relative group">
             <div class="relative">
-              <img
-                src="https://via.placeholder.com/400x400"
-                :alt="t('home.profile.name')"
-                class="w-full h-auto rounded-lg shadow-lg ring-4 ring-white hover:ring-blue-600 transition-all"
-              />
+              <div class="w-64 h-64 mx-auto overflow-hidden rounded-full ring-4 ring-white hover:ring-blue-600 transition-all shadow-lg bg-gray-100">
+                <img
+                  :src="'/images/profile.jpg'"
+                  :alt="t('home.profile.name')"
+                  class="w-full h-full object-cover"
+                  @error="$event.target.style.display = 'none'"
+                />
+              </div>
               <!-- ホバー時のポップアップ -->
               <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 translate-y-1/2 w-5/6 py-4 px-6 bg-white rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all">
                 <p class="font-semibold text-lg text-gray-900">{{ t('home.profile.name') }}</p>
@@ -116,6 +119,7 @@
     </section>
 
     <!-- Featured Projects -->
+    <!-- 一時的に非表示
     <section class="bg-white rounded-lg shadow-sm p-8">
       <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ t('home.featuredProjects') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -135,6 +139,7 @@
         </div>
       </div>
     </section>
+    -->
   </div>
 </template>
 

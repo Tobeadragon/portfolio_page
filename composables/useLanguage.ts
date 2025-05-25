@@ -200,7 +200,7 @@ export const useLanguage = () => {
         featuredProjects: '注目のプロジェクト',
         viewProject: 'プロジェクトを見る',
         profile: {
-          name: '山下達也',
+          name: '山下竜也',
           title: 'フルスタック開発者',
           socialLinks: {
             github: 'GitHubプロフィール',
