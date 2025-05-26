@@ -5,6 +5,9 @@
       <div class="p-4 border rounded-lg bg-white">
         <h3 class="text-xl font-semibold mb-3">{{ t('home.frontend') }}</h3>
         <ul class="space-y-2">
+          <li>HTML</li>
+          <li>CSS / SCSS</li>
+          <li>JavaScript</li>
           <li>Vue.js / Nuxt.js</li>
           <li>React / Next.js</li>
           <li>TypeScript</li>
