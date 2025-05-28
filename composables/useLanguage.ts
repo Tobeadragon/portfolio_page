@@ -6,6 +6,13 @@ export const useLanguage = () => {
 
   const translations = {
     de: {
+      loading: 'Wird geladen...',
+      cookieConsent: {
+        message: 'Diese Website verwendet Cookies, um Ihnen das beste Nutzererlebnis zu bieten.',
+        privacyPolicy: 'Datenschutzerklärung',
+        accept: 'Akzeptieren',
+        decline: 'Ablehnen'
+      },
       nav: {
         home: 'Startseite',
         projects: 'Projekte',
@@ -17,6 +24,7 @@ export const useLanguage = () => {
         subtitle: 'Als Full-Stack-Entwickler biete ich innovative Lösungen',
         contactButton: 'Kontaktieren Sie mich',
         viewProjectsButton: 'Projekte ansehen',
+        downloadCV: 'Lebenslauf herunterladen',
         skills: 'Fähigkeiten',
         frontend: 'Frontend',
         backend: 'Backend',
@@ -93,6 +101,13 @@ export const useLanguage = () => {
       }
     },
     en: {
+      loading: 'Loading...',
+      cookieConsent: {
+        message: 'This website uses cookies to ensure you get the best experience.',
+        privacyPolicy: 'Privacy Policy',
+        accept: 'Accept',
+        decline: 'Decline'
+      },
       nav: {
         home: 'Home',
         projects: 'Projects',
@@ -104,6 +119,7 @@ export const useLanguage = () => {
         subtitle: 'Providing innovative solutions as a full-stack developer',
         contactButton: 'Contact Me',
         viewProjectsButton: 'View Projects',
+        downloadCV: 'Download CV',
         skills: 'Skills',
         frontend: 'Frontend',
         backend: 'Backend',
@@ -180,6 +196,13 @@ export const useLanguage = () => {
       }
     },
     ja: {
+      loading: '読み込み中...',
+      cookieConsent: {
+        message: 'このウェブサイトでは、最高のユーザー体験を提供するためにCookieを使用しています。',
+        privacyPolicy: 'プライバシーポリシー',
+        accept: '同意する',
+        decline: '同意しない'
+      },
       nav: {
         home: 'ホーム',
         projects: 'プロジェクト',
@@ -191,6 +214,7 @@ export const useLanguage = () => {
         subtitle: 'フルスタック開発者として革新的なソリューションを提供',
         contactButton: 'お問い合わせ',
         viewProjectsButton: 'プロジェクトを見る',
+        downloadCV: '履歴書をダウンロード',
         skills: '技術スキル',
         frontend: 'フロントエンド',
         backend: 'バックエンド',

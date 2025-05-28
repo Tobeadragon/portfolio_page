@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-teal-100 rounded-lg shadow-sm p-8">
+  <section class="bg-teal-50 rounded-lg shadow-sm p-8">
     <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ t('home.skills') }}</h2>
     <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
       <div class="p-4 border rounded-lg bg-white">
