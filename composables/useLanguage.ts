@@ -71,7 +71,7 @@ export const useLanguage = () => {
         experience: {
           senior: {
             company: 'Interone GmbH',
-            period: '2022 - Heute',
+            period: '01/2022 - Heute',
             tasks: [
               'Entwicklung und Design von großen Webanwendungen',
               'Betrieb und Wartung von Webseiten und Anwendungen für E-Government und Automobilhersteller',
@@ -79,12 +79,13 @@ export const useLanguage = () => {
             ]
           },
           developer: {
-            company: 'Startup GmbH',
-            period: '2018 - 2020',
+            company: 'DCI Digital Career Institute gGmbH, Berlin',
+            period: '05/2018 - 07/2020',
             tasks: [
-              'Entwicklung und Wartung neuer Dienste',
-              'Performance-Optimierung',
-              'Verbesserung der Benutzererfahrung'
+              'Einjährige praxisorientierte Ausbildung in Webentwicklung',
+              'Schwerpunkte: MongoDB, Express.js, React, Node.js',
+              'Durchführung mehrerer kleiner Projekte sowie eines großen Abschlussprojekts',
+              'Festigung und Anwendung der Programmierkenntnisse in realen Szenarien'
             ]
           }
         }
@@ -167,7 +168,7 @@ export const useLanguage = () => {
         experience: {
           senior: {
             company: 'interone GmbH',
-            period: '2022 - Present',
+            period: '01/2022 - Present',
             tasks: [
               'Development and design of large web applications',
               'Maintenance and management of e-government and automotive manufacturers’ websites and applications',
@@ -175,12 +176,13 @@ export const useLanguage = () => {
             ]
           },
           developer: {
-            company: 'Startup Inc',
-            period: '2018 - 2020',
+            company: 'DCI Digital Career Institute gGmbH, Berlin',
+            period: '05/2020 – 07/2021',
             tasks: [
-              'Development and maintenance of new services',
-              'Performance optimization',
-              'Improvement of user experience'
+              'One-year intensive vocational training in full-stack web development',
+              'Focused on MongoDB, Express.js, React, and Node.js',
+              'Completed multiple small projects and one comprehensive final project',
+              'Strengthened programming skills through hands-on practice'
             ]
           }
         }
@@ -263,7 +265,7 @@ export const useLanguage = () => {
         experience: {
           senior: {
             company: 'Interone GmbH',
-            period: '2022年 - 現在',
+            period: '2022年1月 - 現在',
             tasks: [
               '大規模Webアプリケーションの設計と開発',
               'EGOVや車メーカーのWebページ、アプリケーションの維持管理',
@@ -271,12 +273,13 @@ export const useLanguage = () => {
             ]
           },
           developer: {
-            company: 'スタートアップ株式会社',
-            period: '2018年 - 2020年',
+            company: 'DCI Digital Career Institute gGmbH, Berlin',
+            period: '2020年5月 – 2021年7月',
             tasks: [
-              '新規サービスの開発と運用',
-              'パフォーマンス最適化',
-              'ユーザー体験の改善'
+              '1年間の実践的なWeb開発トレーニング',
+              'MongoDB、Express.js、React、Node.js を中心に学習',
+              '複数の小規模プロジェクトおよび1つの大規模な最終プロジェクトを完了',
+              '実践を通じてプログラミングスキルを習得・強化'
             ]
           }
         }
