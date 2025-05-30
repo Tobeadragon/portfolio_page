@@ -87,6 +87,18 @@ export const useLanguage = () => {
               'Durchführung mehrerer kleiner Projekte sowie eines großen Abschlussprojekts',
               'Festigung und Anwendung der Programmierkenntnisse in realen Szenarien'
             ]
+          },
+          sales: {
+            company: 'Nidec Sankyo Europe GmbH',
+            period: '09/2005-02/2019',
+            tasks: [
+              'Verantwortlich für Vertrieb und Marketing bei europäischenKunden',
+              'Schnittmenge zwischen Hauptverwaltung in Japan und den Kunden',
+              'Neukundenakquise und Mitarbeit an Produktweiterentwicklung',
+              'ProduktweiterentwicklungUmsatzplanung und Umsatzverantwortung',
+              'Umsatzplanung und Umsatzverantwortung',
+              'Verantwortlich für das interne IT-Management',
+            ]
           }
         }
       },
@@ -168,7 +180,7 @@ export const useLanguage = () => {
         experience: {
           senior: {
             company: 'interone GmbH',
-            period: '01/2022 - Present',
+            period: '2022 - Present',
             tasks: [
               'Development and design of large web applications',
               'Maintenance and management of e-government and automotive manufacturers’ websites and applications',
@@ -183,6 +195,17 @@ export const useLanguage = () => {
               'Focused on MongoDB, Express.js, React, and Node.js',
               'Completed multiple small projects and one comprehensive final project',
               'Strengthened programming skills through hands-on practice'
+            ]
+          },
+          sales: {
+            company: 'Nidec Sankyo Europe GmbH',
+            period: '09/2005-02/2019',
+            tasks: [
+              'Responsible for sales and marketing for European customers',
+              'Acted as liaison between the Japanese headquarters and European clients',
+              'Acquired new customers and contributed to product development',
+              'Handled sales planning and was accountable for revenue targets',
+              'Managed internal IT systems and infrastructure',
             ]
           }
         }
@@ -280,6 +303,17 @@ export const useLanguage = () => {
               'MongoDB、Express.js、React、Node.js を中心に学習',
               '複数の小規模プロジェクトおよび1つの大規模な最終プロジェクトを完了',
               '実践を通じてプログラミングスキルを習得・強化'
+            ]
+          },
+          sales: {
+            company: 'Nidec Sankyo Europe GmbH',
+            period: '05/2018 - 07/2020',
+            tasks: [
+              '欧州顧客向けの販売およびマーケティングを担当',
+              '日本本社と欧州顧客の間の連携役として業務遂行',
+              '新規顧客の開拓および製品開発への貢献',
+              '売上計画の策定および売上目標の達成に責任',
+              '社内ITシステムの管理とインフラ運用を担当',
             ]
           }
         }
