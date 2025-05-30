@@ -99,6 +99,14 @@ export const useLanguage = () => {
               'Umsatzplanung und Umsatzverantwortung',
               'Verantwortlich für das interne IT-Management',
             ]
+          },
+          supports: {
+            company: 'Oberon Netzwerk GmbH',
+            period: '04/2001-08/2005',
+            tasks: [
+              'Verantwortlich für IT-Vertieb und Ingenieurswesen für japanische Kunden in Deutschland',
+              'Webseitenentwurf und -verwaltung für japanische Kunden in Deutschland',
+            ]
           }
         }
       },
@@ -207,6 +215,14 @@ export const useLanguage = () => {
               'Handled sales planning and was accountable for revenue targets',
               'Managed internal IT systems and infrastructure',
             ]
+          },
+          supports: {
+            company: 'Oberon Netzwerk GmbH',
+            period: '04/2001-08/2005',
+            tasks: [
+              'Provided IT sales consultation and technical support to Japanese corporate clients in Germany',
+              'Planned, designed, and managed websites for Japanese customers in Germany',
+            ]
           }
         }
       },
@@ -314,6 +330,14 @@ export const useLanguage = () => {
               '新規顧客の開拓および製品開発への貢献',
               '売上計画の策定および売上目標の達成に責任',
               '社内ITシステムの管理とインフラ運用を担当',
+            ]
+          },
+          supports: {
+            company: 'Oberon Netzwerk GmbH',
+            period: '04/2001-08/2005',
+            tasks: [
+              'ドイツ在住の日本人顧客向けに、IT営業および技術サポートを担当',
+              '日本人顧客向けのウェブサイトの企画・制作・管理を実施',
             ]
           }
         }

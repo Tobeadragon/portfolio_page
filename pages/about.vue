@@ -59,6 +59,15 @@
             </li>
           </ul>
         </div>
+        <div class="border-l-4 border-blue-600 pl-4">
+          <h3 class="text-xl font-semibold">{{ t('about.experience.supports.company') }}</h3>
+          <p class="text-gray-600">{{ t('about.experience.supports.period') }}</p>
+          <ul class="list-disc list-inside mt-2 text-gray-700">
+            <li v-for="(task, index) in t('about.experience.supports.tasks')" :key="index">
+              {{ task }}
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
