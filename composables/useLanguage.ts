@@ -41,7 +41,8 @@ export const useLanguage = () => {
             linkedin: 'LinkedIn Profil',
             email: 'E-Mail senden'
           }
-        }
+        },
+        experience:"Berufserfahrung"
       },
       projects: {
         ecommerce: {
@@ -73,7 +74,7 @@ export const useLanguage = () => {
             period: '2022 - Heute',
             tasks: [
               'Entwicklung und Design von großen Webanwendungen',
-              'Leitung eines Teams von 5 Entwicklern',
+              'Betrieb und Wartung von Webseiten und Anwendungen für E-Government und Automobilhersteller',
               'Einführung von Microservices-Architektur'
             ]
           },
@@ -136,7 +137,8 @@ export const useLanguage = () => {
             linkedin: 'LinkedIn Profile',
             email: 'Send Email'
           }
-        }
+        },
+        experience:"Employment History",
       },
       projects: {
         ecommerce: {
@@ -168,7 +170,7 @@ export const useLanguage = () => {
             period: '2022 - Present',
             tasks: [
               'Development and design of large web applications',
-              'Leading a team of 5 developers',
+              'Maintenance and management of e-government and automotive manufacturers’ websites and applications',
               'Implementation of microservices architecture'
             ]
           },
@@ -231,7 +233,8 @@ export const useLanguage = () => {
             linkedin: 'LinkedInプロフィール',
             email: 'メールを送る'
           }
-        }
+        },
+        experience:"業務履歴"
       },
       projects: {
         ecommerce: {
@@ -263,7 +266,7 @@ export const useLanguage = () => {
             period: '2022年 - 現在',
             tasks: [
               '大規模Webアプリケーションの設計と開発',
-              'チームリーダーとして5名のデベロッパーを指導',
+              'EGOVや車メーカーのWebページ、アプリケーションの維持管理',
               'マイクロサービスアーキテクチャの導入'
             ]
           },
