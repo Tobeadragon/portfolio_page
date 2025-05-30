@@ -66,7 +66,7 @@ export const useLanguage = () => {
         intro: {
           p1: 'Hallo! Ich bin ein Full-Stack-Webentwickler mit über 5 Jahren Erfahrung. Ich bin leidenschaftlich daran interessiert, benutzerfreundliche und effiziente Webanwendungen zu entwickeln.',
           p2: 'Ich halte mich stets über die neuesten Technologietrends auf dem Laufenden und strebe nach kontinuierlichem Lernen und Wachstum. Ich habe umfangreiche Erfahrung in der Teamarbeit und bin versiert im Projektmanagement mit agilen Entwicklungsmethoden.',
-          p3: 'In meiner Freizeit schreibe ich technische Blogs und trage zu Open-Source-Projekten bei. Ich möchte durch die Weitergabe an die Community zur technologischen Entwicklung beitragen.'
+          p3: 'In meiner Freizeit genieße ich das Kochen als Hobby. Ich koche und probiere gerne Gerichte aus verschiedenen Ländern. Außerdem gehe ich gerne ins Kino und fahre im Winter Ski.'
         },
         experience: {
           senior: {
@@ -162,7 +162,7 @@ export const useLanguage = () => {
         intro: {
           p1: 'Hello! I am a full-stack web developer with over 5 years of experience. I am passionate about developing user-friendly and efficient web applications.',
           p2: 'I stay up-to-date with the latest technology trends and strive for continuous learning and growth. I have extensive experience in team development and am proficient in project management using agile development methods.',
-          p3: 'In my free time, I write technical blogs and contribute to open-source projects. I want to contribute to technological development through giving back to the community.'
+          p3: 'In my free time, I enjoy cooking as a hobby. I like making and enjoying dishes from various countries. Besides that, I also go to the movies and enjoy skiing in the winter.'
         },
         experience: {
           senior: {
@@ -258,7 +258,7 @@ export const useLanguage = () => {
         intro: {
           p1: 'こんにちは！私はフルスタックWeb開発者として、5年以上の経験を持っています。ユーザーフレンドリーで効率的なWebアプリケーションの開発に情熱を注いでいます。',
           p2: '最新の技術トレンドに常にアンテナを張り、継続的な学習と成長を心がけています。チーム開発での経験も豊富で、アジャイル開発手法を用いたプロジェクト管理も得意としています。',
-          p3: '趣味は技術ブログの執筆とオープンソースプロジェクトへの貢献です。コミュニティへの還元を通じて、技術の発展に貢献したいと考えています。'
+          p3: '私のフリータイムは趣味の料理を楽しみます。様々な国の料理を作って楽しみます。それ以外にも映画を見に行ったり、冬はスキーを楽しみます。'
         },
         experience: {
           senior: {
