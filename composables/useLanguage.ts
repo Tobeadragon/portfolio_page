@@ -69,8 +69,8 @@ export const useLanguage = () => {
         },
         experience: {
           senior: {
-            company: 'Tech GmbH',
-            period: '2020 - Heute',
+            company: 'Interone GmbH',
+            period: '2022 - Heute',
             tasks: [
               'Entwicklung und Design von großen Webanwendungen',
               'Leitung eines Teams von 5 Entwicklern',
@@ -164,8 +164,8 @@ export const useLanguage = () => {
         },
         experience: {
           senior: {
-            company: 'Tech Corp',
-            period: '2020 - Present',
+            company: 'interone GmbH',
+            period: '2022 - Present',
             tasks: [
               'Development and design of large web applications',
               'Leading a team of 5 developers',
@@ -211,7 +211,7 @@ export const useLanguage = () => {
       },
       home: {
         title: 'Tatsuya Yamashita',
-        subtitle: 'フルスタック開発者として革新的なソリューションを提供',
+        subtitle: 'フルスタック開発者として革新的なソリューションを提供します。',
         contactButton: 'お問い合わせ',
         viewProjectsButton: 'プロジェクトを見る',
         downloadCV: '履歴書をダウンロード',
@@ -259,8 +259,8 @@ export const useLanguage = () => {
         },
         experience: {
           senior: {
-            company: 'テック株式会社',
-            period: '2020年 - 現在',
+            company: 'Interone GmbH',
+            period: '2022年 - 現在',
             tasks: [
               '大規模Webアプリケーションの設計と開発',
               'チームリーダーとして5名のデベロッパーを指導',
