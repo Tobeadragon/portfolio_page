@@ -21,8 +21,8 @@
         <div class="flex flex-col md:flex-row items-center justify-between gap-12">
           <!-- 左側：テキストコンテンツ -->
           <div class="md:w-2/3 text-left">
-            <h1 class="text-5xl font-bold text-teal-400 mb-4">{{ t('home.title') }}</h1>
-            <p class="text-xl text-gray-600 mb-8">{{ t('home.subtitle') }}</p>
+            <h1 class="text-5xl font-bold text-teal-400 mb-4 text-shadow-xs text-shadow-white ">{{ t('home.title') }}</h1>
+            <p class="text-xl text-gray-600 mb-8 text-shadow-2xs text-shadow-white ">{{ t('home.subtitle') }}</p>
             <div class="flex flex-wrap gap-4">
               <NuxtLink
                 to="/contact"
